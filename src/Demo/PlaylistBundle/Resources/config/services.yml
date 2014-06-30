@@ -1,0 +1,7 @@
+parameters:
+#    play_list.example.class: Demo\PlaylistBundle\Example
+
+services:
+#    play_list.example:
+#        class: %play_list.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,11 @@
+album_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AlbumBundle:Default:index }
+
+album_index:
+    pattern: /album/index
+    defaults: { _controller: AlbumBundle:Album:index }
+
+album_add:
+    pattern: /album/add
+    defaults: { _controller: AlbumBundle:Album:add }

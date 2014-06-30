@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AlbumBundle:Album:index{% endblock %}
+
+{% block body %}
+    <h2>My playlist</h2>
+
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Artiste</th>
+            <th>Actions</th>
+        </tr>
+        {% for album in albums %}
+            <tr>
+                <td>{{ album.id }}</td>
+                <td>{{ album.titre }}</td>
+                <td>{{ album.artiste }}</td>
+                <td><a href="{{ asset('album_index') }}">Edit</a> | <a href="{{ asset('/') }}">Delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

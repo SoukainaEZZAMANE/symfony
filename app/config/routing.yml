@@ -1,0 +1,12 @@
+task:
+    resource: "@TaskBundle/Resources/config/routing.yml"
+    prefix:   /
+
+play_list:
+    resource: "@PlayListBundle/Resources/config/routing.yml"
+    prefix:   /
+
+album:
+    resource: "@AlbumBundle/Resources/config/routing.yml"
+    prefix:   /
+

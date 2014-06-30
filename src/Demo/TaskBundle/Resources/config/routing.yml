@@ -1,0 +1,7 @@
+task_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TaskBundle:Default:index }
+
+task_new:
+    path: /task/new
+    defaults: { _controller: TaskBundle:Default:new }

@@ -1,0 +1,19 @@
+play_list_homepage:
+    pattern:  /playlist/
+    defaults: { _controller: PlayListBundle:Playlist:index }
+
+index:
+    pattern: /playlist
+    defaults: { _controller: PlayListBundle:PlayList:index }
+
+edit:
+    pattern: /playlist/edit/{id}
+    defaults: { _controller: PlayListBundle:PlayList:edit }
+
+add:
+    pattern: /playlist/add
+    defaults: { _controller: PlayListBundle:PlayList:add }
+
+delete:
+    pattern: /playlist/delete/{id}
+    defaults: { _controller: PlayListBundle:PlayList:delete }
